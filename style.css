@@ -70,20 +70,18 @@ h2 {
     margin-right: 17px;
     margin-top: 19px;
     border-radius: 50px;
-    border: 0;
+    border: 1px solid transparent;
 }
 
 .button-primary {
     color: #FFFFFF;
     background-color: #0071E3;
-    border: 0;
 }
 
 .button-outline {
     color: #2997FF;
     background-color: transparent;
-    border: 1;
-    border-color: #2997FF;
+    border: 1px solid #2997FF;
 }
 
 .button-second{
@@ -94,8 +92,7 @@ h2 {
 .button-second-outline {
     color: #F5F5F7;
     background-color: transparent;
-    border: 1;
-    border-color:#F5F5F7;
+    border: 1px solid #F5F5F7;
 }
 
 .text-center {
