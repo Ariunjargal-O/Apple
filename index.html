@@ -1,176 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <header>
-        <ul>
-            <li><img src="assets/logo.png" /></li>
-            <li>Store</li>
-            <li>Mac</li>
-            <li>iPad</li>
-            <li>iPhone</li>
-            <li>Watch</li>
-            <li>Vision</li>
-            <li>AirPods</li>
-            <li>Tv & Home</li>
-            <li>Entertainment</li>
-            <li>Accessories</li>
-            <li>Support</li>
-            <li><img src="assets/search.png" /></li>
-            <li><img src="assets/shop.png" /></li>
-        </ul>
+  <body>
+    <header class="header-big">
+      <nav class="nav">
+        <a href="#"><img class="nav-img" src="assets/logo.png" /></a>
+        <a href="store.html">Store</a>
+        <a href="#">Mac</a>
+        <a href="#">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="#">Watch</a>
+        <a href="#">Vision</a>
+        <a href="#">AirPods</a>
+        <a href="#">Tv & Home</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Accessories</a>
+        <a href="#">Support</a>
+        <a href="#"><img class="nav-img" src="assets/search.png" /></a>
+        <a href="#"><img class="nav-img" src="assets/shop.png" /></a>
+      </nav>
     </header>
+    <header class="haeder-mid">
+      <div class="mid-flex-nav">
+        <a href="./index.html"><img class="nav-img" src="assets/logo.png" /></a>
+        <div class="mid-flex-ss">
+          <a href="#"><img class="nav-img" src="assets/search.png" /></a>
+          <a href="./store.html"
+            ><img class="nav-img" src="assets/shop.png"
+          /></a>
+          <a href="#"><img class="nav-img" src="assets/menu.png" /></a>
+        </div>
+      </div>
+    </header>
+
     <div class="sub-header">
-        <p>We’re donating $5 to the Global Fund for every purchase made with Apple Pay at Apple. Through 12/8.
-            <a href="#">Shop ></a>
-        </p>
+      <p>
+        We’re donating $5 to the Global Fund for every purchase made with
+        Apple Pay at Apple. Through 12/8.
+        <a href="#">Shop ></a>
+      </p>
     </div>
     <section>
-        <picture>
-            <source media="(max-width:390px)" srcset="./assets/main-1-3.png"/>
-            <source media="(max-width:768px)" srcset="./assets/Main-1-2.png"/>
-        <img id="back-img" src="assets/main.png" />
-    </picture>
-        <div class="main-text-center">
-            <h1>iPhone 16 Pro</h1>
-            <h2>Hello, Apple Intelligence.</h2>
-            <div>
-                <button class="btn button-primary">Learn more</button>
-                <button class="btn button-outline">Buy</button>
-            </div>
+      <picture>
+        <source media="(max-width:508px)" srcset="./assets/main-1-3.png" />
+        <source media="(max-width:868px)" srcset="./assets/Main-1-2.png" />
+        <img class="back-img" src="assets/main.png" />
+      </picture>
+      <div class="main-text-center">
+        <h1>iPhone 16 Pro</h1>
+        <h2>Hello, Apple Intelligence.</h2>
+        <div>
+          <button class="btn button-primary">Learn more</button>
+          <button class="btn button-outline">Buy</button>
         </div>
+      </div>
     </section>
 
     <section>
-        <picture>
-            <source media="(max-width:390px)" srcset="./assets/main2-3.png"/>
-            <source media="(max-width:768px)" srcset="./assets/Main-2-2.png"/>
+      <picture>
+        <source media="(max-width:508px)" srcset="./assets/main2-3.png" />
+        <source media="(max-width:868px)" srcset="./assets/Main-2-2.png" />
 
-        <img id="back-img" src="assets/Main-2.png" />
-    </picture>
-        <div class="text-center">
-            <h1>iPhone 16</h1>
-            <h2>Hello, Apple Intelligence.</h2>
-            <div>
-                <button class="btn button-second">Learn more</button>
-                <button class="btn button-second-outline">Buy</button>
-            </div>
+        <img class="back-img" src="assets/Main-2.png" />
+      </picture>
+      <div class="text-center">
+        <h1>iPhone 16</h1>
+        <h2>Hello, Apple Intelligence.</h2>
+        <div>
+          <button class="btn button-second">Learn more</button>
+          <button class="btn button-second-outline">Buy</button>
         </div>
+      </div>
     </section>
 
     <section class="gift-magic">
-        <img id="back-img" src="assets/gift-magic.png" />
-        <div class="text-end">
-            <h1 class="font-black">Gift magic</h1>
-            <h2 class="font-black">Make their holiday wish come true.</h2>
-            <div>
-                <button class="btn button-primary">Learn more</button>
-            </div>
+      <img class="back-img" src="assets/gift-magic.png" />
+      <div class="text-end">
+        <h1 class="font-black">Gift magic</h1>
+        <h2 class="font-black">Make their holiday wish come true.</h2>
+        <div>
+          <button class="btn button-primary">Learn more</button>
         </div>
+      </div>
     </section>
 
-
-
-    <section>
-        <div class="homepage-section">
-            <div class="ipadair menu-back">
-                <img src="assets/ipadair.png" />
-                <h3>Two sizes. Faster chip. Does it all.</h3>
-                <div>
-                    <button class="btn button-primary">Learn more</button>
-                    <button class="btn button-outline">Buy</button>
-                </div>
-                <h3 class="h3-color">Hello, Apple Intelligence.</h3>
-            </div>
-            <div class="airpods air-pods">
-                <h1>AirPods Pro 2</h1>
-                <h3 class="font-white
-                    ">Now with a Hearing Aid feature.2</h3>
-                <div>
-                    <button class="btn button-primary">Learn more</button>
-                    <button class="btn button-outline">Buy</button>
-                </div>
-
-            </div>
+    <section class="big-ipad">
+      <div class="ipadair menu-back">
+        <div class="flex">
+          <h1 class="font-black">iPad</h1>
+          <h1 class="air">air</h1>
         </div>
-
-        <div class="homepage-section">
-            <div class="menu-back iwatch ">
-                <img src="assets/watch.png" />
-                <h3>Thinstant classic.</h3>
-                <div>
-                    <button class="btn button-primary">Learn more</button>
-                    <button class="btn button-outline">Buy</button>
-                </div>
-            </div>
-            <div class="macbookair menu-back">
-                <h1 class="font-black">MacBook Air</h1>
-                <h3>Lean. Mean. M3 machine.</h3>
-                <div>
-                    <button class="btn button-primary">Learn more</button>
-                    <button class="btn button-outline">Buy</button>
-                </div>
-
-            </div>
-
-            </dvi>
-           
+        <h3>Two sizes. Faster chip. Does it all.</h3>
+        <div>
+          <button class="btn button-primary">Learn more</button>
+          <button class="btn button-outline">Buy</button>
         </div>
-
-        <div class="homepage-section">
-            <div class="trade menu-back">
-                <img src="assets/tradein.png" />
-                <h3>Get $180–$650 in credit when you <br />
-                    trade in iPhone 12 or higher.3</h3>
-                <button class="btn button-primary">Get your estimate</button>
-            </div>
-
-            <div class="card menu-back">
-                <img src="assets/card.png" />
-                <h3>Get up to 3% Daily 
-                    Cash back <br /> with every purchase.</h3>
-                <div>
-                    <button class="btn button-primary">Learn more</button>
-                    <button class="btn button-outline">Apply now</button>
-                </div>
-            </div>
-        </div>
-
+        <h3 class="h3-color">Hello, Apple Intelligence.</h3>
+      </div>
     </section>
 
     <section>
-        <div class="gallery">
-            <div class=" gallery-tab tab1"></div>
-            <div class=" gallery-tab tab2"></div>
-            <div class=" gallery-tab tab3"></div>
-            <div class=" gallery-tab tab4"></div>
-            <div class=" gallery-tab tab5"></div>
-            <div class=" gallery-tab tab6"></div>
-            <div class=" gallery-tab tab7"></div>
-            <div class=" gallery-tab tab8"></div>
-            <div class=" gallery-tab tab9"></div>
-            <div class=" gallery-tab tab10"></div>
+      <div class="container-flex airpad-airpod">
+        <div class="ipadair menu-back">
+          <div class="flex">
+            <h1 class="font-black">iPad</h1>
+            <h1 class="air">air</h1>
+          </div>
+          <h3>Two sizes. Faster chip. Does it all.</h3>
+          <div>
+            <button class="btn button-primary">Learn more</button>
+            <button class="btn button-outline">Buy</button>
+          </div>
+          <h3 class="h3-color">Hello, Apple Intelligence.</h3>
         </div>
 
-        <div class="footer-gallery">
-            <div><img class="footer-gallery-tab" src="assets/yoga.png"/></div>
-            <div><img class="footer-gallery-tab" src="assets/music1.png" alt=""></div>
-            <div><img class="footer-gallery-tab" src="assets/arcade.png" alt=""></div>
-            <div><img class="footer-gallery-tab" src="assets/fitness.png" alt=""></div>
-            <div><img class="footer-gallery-tab" src="assets/music.png" alt=""></div>
+        <div class="airpods air-pods">
+          <h1>AirPods Pro 4</h1>
+          <h3 class="font-white big-airpods-text">
+            Now with a Hearing Aid feature.2
+          </h3>
+          <h3 class="font-white mid-airpods-text">
+            Iconic. Now supersonic. Available with Active Noise Cancellation.2
+          </h3>
+          <div>
+            <button class="btn button-primary">Learn more</button>
+            <button class="btn button-outline">Buy</button>
+          </div>
         </div>
+      </div>
+
+      <div class="container-flex mid-airpod-watch">
+        <div class="airpods air-pods">
+          <h1>AirPods Pro 4</h1>
+          <h3 class="font-white big-airpods-text">
+            Now with a Hearing Aid feature.2
+          </h3>
+          <h3 class="font-white mid-airpods-text">
+            Iconic. Now supersonic. Available with Active Noise Cancellation.2
+          </h3>
+          <div>
+            <button class="btn button-primary">Learn more</button>
+            <button class="btn button-outline">Buy</button>
+          </div>
+        </div>
+        <div class="menu-back iwatch">
+          <div class="flex">
+            <img class="nav-img" src="assets/logo.png" />
+            <h1 class="font-black">Watch</h1>
+          </div>
+          <h3>Thinstant classic.</h3>
+          <div>
+            <button class="btn button-primary">Learn more</button>
+            <button class="btn button-outline">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-flex watch-macbookair">
+        <div class="menu-back iwatch">
+          <div class="flex">
+            <img class="nav-img" src="assets/logo.png" />
+            <h1 class="font-black">Watch</h1>
+          </div>
+          <h3>Thinstant classic.</h3>
+          <div>
+            <button class="btn button-primary">Learn more</button>
+            <button class="btn button-outline">Buy</button>
+          </div>
+        </div>
+        <div class="macbookair menu-back">
+          <h1 class="font-black">MacBook Air</h1>
+          <h3>Lean. Mean. M3 machine.</h3>
+          <div>
+            <button class="btn button-primary">Learn more</button>
+            <button class="btn button-outline">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-flex mid-airpod-watch">
+        <div class="macbookair menu-back">
+          <h1 class="font-black">MacBook Air</h1>
+          <h3>Lean. Mean. M3 machine.</h3>
+          <div>
+            <button class="btn button-primary">Learn more</button>
+            <button class="btn button-outline">Buy</button>
+          </div>
+        </div>
+        <div class="apple-business menu-back">
+          <h1 class="font-black">Apple for Small Business</h1>
+          <h3>
+            GHardware, software, and <br />
+            expert help - all in one place.
+          </h3>
+          <button class="btn button-primary">Learn more</button>
+        </div>
+      </div>
+
+      <div class="container-flex big-trade-card">
+        <div class="trade menu-back">
+          <div class="flex">
+            <img class="nav-img" src="assets/logo.png" />
+            <h1 class="font-black">TradeIn</h1>
+          </div>
+          <h3>
+            Get $180–$650 in credit when you <br />
+            trade in iPhone 12 or higher.3
+          </h3>
+          <button class="btn button-primary">Get your estimate</button>
+        </div>
+
+        <div class="card menu-back">
+          <div class="flex">
+            <img class="nav-img" src="assets/logo.png" />
+            <h1 class="font-black">Card</h1>
+          </div>
+          <h3>
+            Get up to 3% Daily  Cash back <br />
+            with every purchase.
+          </h3>
+          <div>
+            <button class="btn button-primary">Learn more</button>
+            <button class="btn button-outline">Apply now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-flex mid-applecareer-trade">
+        <div class="apple-career air-pods">
+          <h1 class="font-black">Carrier deals at Apple</h1>
+          <h3>
+            Get up to $1000 in credit on<br />
+            a new iPhone. Trade-in may<br />
+            be required.
+          </h3>
+          <div><button class="btn button-primary">Find your deal</button></div>
+        </div>
+        <div class="trade menu-back">
+          <div class="flex">
+            <img class="nav-img" src="assets/logo.png" />
+            <h1 class="font-black">Trade In</h1>
+          </div>
+          <h3>
+            Get $180–$650 in credit when you <br />
+            trade in iPhone 12 or higher.3
+          </h3>
+          <button class="btn button-primary">Get your estimate</button>
+        </div>
+      </div>
     </section>
 
+    <section>
+      <div class="gallery">
+        <div class="gallery-tab tab1"></div>
+        <div class="gallery-tab tab2"></div>
+        <div class="gallery-tab tab3"></div>
+        <div class="gallery-tab tab4"></div>
+        <div class="gallery-tab tab5"></div>
+        <div class="gallery-tab tab6"></div>
+        <div class="gallery-tab tab7"></div>
+        <div class="gallery-tab tab8"></div>
+        <div class="gallery-tab tab9"></div>
+        <div class="gallery-tab tab10"></div>
+      </div>
 
-
-
-</body>
-
+      <div class="footer-gallery">
+        <img class="footer-gallery-tab" src="assets/yoga.png" alt="" />
+        <img class="footer-gallery-tab" src="assets/music1.png" alt="" />
+        <img class="footer-gallery-tab" src="assets/arcade.png" alt="" />
+        <img class="footer-gallery-tab" src="assets/fitness.png" alt="" />
+        <img class="footer-gallery-tab" src="assets/yoga.png" alt="" />
+        <img class="footer-gallery-tab" src="assets/music1.png" alt="" />
+        <img class="footer-gallery-tab" src="assets/arcade.png" alt="" />
+        <img class="footer-gallery-tab" src="assets/fitness.png" alt="" />
+      </div>
+    </section>
+  </body>
 </html>
