@@ -5,61 +5,59 @@
 
 body {
     background-color: #F5F5F7;
+
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.header-big {
     position: fixed;
-    top: 0;
-    left: 0;
-    gap: 20px;
     width: 100%;
-    height: 44px;
-    background-color: #F5F5F7;
-    backdrop-filter: blur(10px);
-    z-index: 10;
+    height: 52px;
+    background-color: #F5F5F7CC;
+    backdrop-filter: blur(20px);
+    display: flex;
     justify-content: center;
+    z-index: 100;
+    top: 0;
+    display: block;
 }
 
-.store-link {
-    text-decoration: none;
-    color: #1D1D1F;
-}
-
-ul {
-    list-style: none;
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
-    /* width: 996px; */
-    padding-left: 0;
+    align-items: center;
+    gap: 24px;
 }
 
-body .sub-header {
+.nav-img {
+    width: 14px;
+    height: 14px;
+}
+
+nav a {
+    font-family: Inter;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #1D1D1F;
-    background-color: white;
+    font-size: 12px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.sub-header {
     width: 100%;
-    height: 58px;
+    height: 52px;
+    background-color: #FFFFFF;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    padding: 20px;
+    align-items: center;
+    /* margin-top: 52px; */
+    z-index: 1;
 }
 
 .header-gradent {
-    height: 75px;
     width: 100%;
-    background-color: #F5F5F7;
-    inset: 0px 33px linear-gradient(90deg,
-            rgba(1, 159, 251, 1) 10%,
-            rgba(0, 0, 0, 0.2) 40%),
 }
 
 
@@ -103,7 +101,7 @@ body .sub-header {
 }
 
 #icon {
-    background-image: url(https://s3-alpha-sig.figma.com/img/f2b6/79ae/6791d18fc8aeadd75a3c2d3e35c715ef?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qgTAJuucC4zuZToZUbcX-JGju4gBjt9ufdOPo3s82Lv8bUiroLlnoXG~ElyDVFjaNurS8vv9gimg7zpj7aobgtlWY0~VMrjC41Ew3bfoFd-dObPs1Pf1-4JUwYK8Lq3-zq8wkel83xopT0TshCqkeOdzclyXF9J2uUYzeBCkdwy6iF2pMGs6t~W9kBAC8KTCTs8bH8UtV4kxkxMPVIVJ74ohoMn2xBNpI6BAuhBsz1HkBpx9TQU17NGsI-7~FI2BL92V3iWZ7YUzFY~Okcoy4f0XqfE4KKTvAqJVCDu7672sxIaBnKJa96KVOOtHswhCdNtw3X00-KBFq1YtjK1XjA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743886708/store-chat-holiday-specialist-icon-202411_AV3_nthfnm.png);
     background-size: cover;
     width: 35px;
     height: 35px;
@@ -145,47 +143,48 @@ body .sub-header {
 }
 
 .mac {
-    background-image: url(https://s3-alpha-sig.figma.com/img/34ba/f6a0/39ecbf1ba6a7732037e120bdd468a7ae?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X2RZdOtyZUFFowjgk5ZHNSAKy~BdtPtv1otFI-xxWZrvV68Br9u-HxAHaguaYyEsTqQaN9jpaDKloZPGd91csPOoeCNs4mzO0erm5xnGKcZ0nHVwdokwpFXtWweq1GPI6fwS7INx9asVo1O8Kz8HWEuS7ajhVF8Me~2OLyLoqPR2XLBAjqMY2O7XqehPYs~3CMiBC~XnprJPjD~BuZY2BqaaDGIEZ3ztioHFIVlOFfXDasVuShCQQJsYvMIMGr0An8SPSBMjHZTltmnuehvF1~OP71zIKzXnEymxaGNKzPW4fCbRBY1QnV-w1gxo68wnsQvBfyeV70CgzTiC1ub6Jw__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887140/store-card-13-mac-nav-202410_dn48yo.png);
 }
 
 .iphone {
-    background-image: url(https://s3-alpha-sig.figma.com/img/3c2d/f4a7/c5c891f90a79861702d92614ebb717a7?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b6oJ-NY8EsA86G34EXfsmPgHPmXiqHXoOQEZqYRNJ45vyETfg~SJCB5JAy9y8Zz8Fs52SKb2btnXIjMvfpLohIwPVkFD6-jBTecweGb9DxZ0OBcYYxjvOYqZG8zEiBnp7b2uqigtCGE5cmgxudMEgsOLsBA7-TJsSK26B2C2oUb9S8Vx~T3nXiRpkmkyA9FtD84LScUeMtSp~fNPjQbsWdmz0nuiEEhH-OQBApdXAiWsC4Sf4vRjO845X-vjV0xqIVDr~9BPL9U3-SlDHyQ8VznoSJW~ulCYUg9RGQZprrFcI4qWWcai8K0BbkdC5uquUHO1VGTVmZMTJTOuq9RsVA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887141/store-card-13-iphone-nav-202409_GEO_US_eav0qo.png);
 }
 
 .ipad {
-    background-image: url(https://s3-alpha-sig.figma.com/img/8b22/7b13/d4a5deba8b13df756bb5cacf2ba4c363?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kdPcWOk5mRUQNfuI-2mKrNsYebWnSQxqR-bTIzfgEh8KIw6V1ygnq5gY5Loyx8Yo7MvfRHFMriIIRSGGNIkxb~89YcYocejoOYQjwWwapYgjD3LEoUc5EMyNO~kYn52epJeEKpYFfkQNH~69bs86ihvDUWYDqJZIX4qNS-tt9PN~U2AUDyjhlMkZlTI7yvsXoCNbba0RedZeIbUzwJLcHb0N2wECGu4jXVS0uHwcuX7OIcPUytWgDJncNYJ1PpQvNhks1t4Ck7x-m1-6HXaVEE6BpauQsRR~pO9li9nPqwVmx7BootGPVy633eQxQ58XJolyw~Q2DVy~6XgS85lyZg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887141/store-card-13-ipad-nav-202405_pobqsk.png);
 }
 
 .iwatch {
-    background-image: url(https://s3-alpha-sig.figma.com/img/b3b3/0593/3bfde0904dbc2d5680c1e5abf89ef5df?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MdJ~EoTVPYRrbc8Vr7sb6bCw0sH5wzbTJHP7X-4oX62p3GYToHcM6KLiu99ikI7e1fPSdh2wrjp~TW8Y0DYtbmGBXsd8KtxajbbKuuPMLIe7pgVWW0Nv5b-duhqPdDNDlvogiDI73a2eAvPw8BTwhufYSJLYBUPDyEfR2cV-bvlzhMSMLh0Nu8nE0TCnlI5LfYQKV5tPHwRil6u4WmlB~1jMse8je6m55jzDhXStxAWavrTMclYUyW1WZtZXgFlqpS1dDD7oe19NQYrkCNdfnJhn~FI3SsCv8RXmgY~0DZTNm7cvh8Em7pZ0m9M9AauOYiHGpm3spfz0bXQJ0yuM8w__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743886915/store-card-13-watch-nav-202409_rjd0xw.png);
 }
 
 .vision {
-    background-image: url(https://s3-alpha-sig.figma.com/img/3171/64b8/238731a20a2332fc3e7bf6bb5e81b23d?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pK5cpkTTXlkUP0gs1d7mZ9lFvTFisUJ8Z~EAZiBV2wPCEJiRfS4E72VrxaxrIb0YGZ2JdJGz~Kc97oLuOBwyf~ZF~QAtvTBfVzUtyTnJfQwip1c4VRYTV3GVa-k5wsvsXzgMYnem6popHKQxCJA9vEoOTAJ3HvkRVxkLX3h70t25JTtW0xYHKJiPGB9vyrR4NJ2rY2dkxZuZ1wY0W7nJz-DZIF3iU3kZxqHgKOL-lKoGNsLgOSbNemlaxprJ1GuyIvdSC5ukC~KREdtytzH0~1163iQ-Vx3sfN0GPztfWBh3xarzs70aexs8cGQGqQWM5sWQ5L5O5awihD-ihA5E0A__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887140/store-card-13-vision-pro-nav-202401_rrlk67.png);
 }
 
 .airpod {
-    background-image: url(https://s3-alpha-sig.figma.com/img/f09e/f14c/12d4141a917468ed4a80edfbf5b64963?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mBhWYhHql~2sGJ3Z1z2HAKgawrNqo3p-8678pjXTUFlkIfczNq069LSbr~Y5tQxbLi6xFbBo30xenCUSdZ8bVLP1uqEGkKgG00uk9lTZWMMoUp5skWMW3JwxbdOc-H0-isFvYBeA-aDMbO9gcijwXUDQYRXBD13uxJEzTnqGMqtLLi3thhjzhhUf5oMtcEI4w08eDTGftcg7l9AdvVhVThRaPNgiJpWAWhvO~rto9zylkhZzNXq8qYA3Q5w7LilaibSoY8ZyhLz6J-2SB4Se5V62Hcs4U0vjMIhmzyR2YSHpDPZXmu6HNLkZUVTHueUXfSUfR~mXL6Gu~QCupBteUg__);
-}
-
-.applecard {
-    background-image: url(https://s3-alpha-sig.figma.com/img/70be/0fba/a2ad5623aa11af590af34c1f787f1d9f?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BmdPUydVjMP0Hcr0~66U0bHhWgnneuxIbU9~8l7JtTdm221fguT76nT9GB--y1qbgxvW0z18Tf6dRJ755LXSW0odCYRaKG8IeqYWosSixHI9fjtJusOIQNPs78n6-KGVDu1vZ~5XeKvjRzzMC7aD4~orVl-bdTKgwakT-VVSHlMwB7DgxfFxdsZq5fKi-kd2EHMSWRGSNLfDM826S7Nak6uiYuVKVVIFV15mZOHt~vEMrSUML~bSQoL1nKzRfpp5s0tn~Ly4LUO0~UUX2bxGryYXUs8OMLmAHy3IeZeqt1RZVgn~9FAZDzbGDLaTSO9UoqQvwVT1OxeRwUscDQNK9w__);
-}
-
-.accessories {
-    background-image: url(https://s3-alpha-sig.figma.com/img/245c/cbb0/018762dccd01a6ddb76676d8afab6b36?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NjF6aZ~2EnJsIYmz3xPp-LWHYM8GQDHDheIR7p1XrDZxA90mc2Yeq1RfSUpDfOV5l1Ar959Uj1SRJ8AzmPhcKCXvS1vqbyOtFtKbtoNtRxhOGnGCyejmLVaU1ibKnQPwDaAmbdecF5cA2qegS82I6Z4aFvzWLjPwN4BU5NR4WlMIx4jvW1JbrDespHQwf2UxMTLr3ULDezvV044dvytnNJ7Ui2nl5co0wtFp2uM5~~M1CIB0UgcUuN23v9zAmSeUbyD2h82vU0mFLURfYEkmKlqAlIPDcic3Px0fl19xMiWMP3IjxJseH2-UHvNPAh90dzslZ3EtV29I6hSCWs6l-Q__);
-}
-
-.homepod {
-    background-image: url(https://s3-alpha-sig.figma.com/img/bdc6/5d56/260e4cf86d489cd61103d0b42b4a6982?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qc1O5DcxIuqhf2oQ4lXmswyyqRcPSxoyxVISEMNSuHvWEh7d2LrT4nV85HRAadAFbTjPFWxYM9MApve-wrpCQ4g2nFHUgUxkE4yvs1GWOW4-t0FC2wL3ss9WaDp~II4QIwAaZD4hutanaWBeIhru0cypoBBXqoBMQhRmN6NpEXOrJAmxqxe0J2KYvYo0TdkwUVgq3IVgYaFC0ocQ1tKs0TooXod6hAAG2NVY0YXae20wbLkHzrBCmnSQI8r99SOrJxp7JkPoRg0x6KJC8YKV0f9rqpM4lM4ataq6jrpUKCvswCRxJnLvZ6wXL1z9F3SvOdjM3Eicyw8EBnzIfEz8vA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743886909/store-card-13-airpods-nav-202409_xvfcxd.png);
 }
 
 .airtag {
-    background-image: url(https://s3-alpha-sig.figma.com/img/44e3/a54d/da74f69c5662cc2bae822376f59710df?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FO8wLYeIyygCqBZJhdynSh7It-aOkZdh1ALC78oJqVC9jxEKxqhLuVEeJbrRVp~Pgqtxk9xQDJFpmXThRwEIP7fIkvd8bvkJIFTJSNurAXXcUq0wQ1W6RCp4Amsrb6mzJry-pN~2M2vJapH0-4N6~bPXm1WFklVga1msiqNA9NvyF2LEy4h5q5JaK33YDhTmGtzaZ8M6UzRzExHTObkq8lM1eAuw49dbTFrOrPQNPiATEhKHaqnJBuelYmYPf7sr273dNkFT7FqrmNWqclwPnkPsB0HnGZMzE0Wc8e1yMicJpHro1IvtJbUqC4iSgvAL8jzo9PboIA2pF6HfdWMEMA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743886914/store-card-13-airtags-nav-202108_wc8ixa.png);
 }
 
 .appletv {
-    background-image: url(https://s3-alpha-sig.figma.com/img/78f6/080c/8fe5bd51da68f7b04b40e9e80064595b?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N25Yg1f1k6~RdyCnnmlH9J1jYXOHwedJILfGYnnfDHiwC6OqSNkOkRF0YMWrc0bRNeDqVhm5ZmncCAmf0A4fpKjbmBPQCIL4yNHd6wc2KsDT0jTQGq1RryYhydYOhBTSxQmceX6nlkg2L0ExXES0YjibE6K6kARwehutMt3UxdLug6oraA2mreKGLdt5hSfGcBbIayanzy6QVAtysl2UELZwUX0-xrEudb4oK5TJJnMGI78~LGLs02vR0prC~iTdI9TWRZWfq68bPof-m3C-W0rfDX1EZ7U9SFvsPfIZiSbxjpumyOXMrY3F4VKpowqy3ckOZkmUHo7-HDQL~3pSzQ__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743886914/store-card-13-appletv-nav-202210_ooetgw.png);
+}
+
+.homepod {
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887148/store-card-13-homepod-nav-202301_oitlox.png);
+}
+
+.accessories {
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743886908/store-card-13-accessories-nav-202409_w1h5gv.png);
+}
+
+
+.applecard {
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887148/store-card-13-holiday-giftcards-asit-agc-nav-202111_oo4kfy.png);
 }
 
 .second-hed {
@@ -221,11 +220,13 @@ body .sub-header {
     border-radius: 18px;
     background-color: white;
     margin: 10px;
+    object-fit: cover;
+    border: 1px solid#FFFFFF;
+    box-shadow: 2px solid #F5F5F7CC;
 }
 
 #ip16pro {
-    background-image: url(https://s3-alpha-sig.figma.com/img/8cee/8a34/ee4ba9b658ae0be05611d11ea5d55e1b?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FUytaNUZ~oiFxuZQ3SFMBzkdL7aJ06-OXgrTCMmlIQ0a2gKNKqQhReHGXLWwKN89LQsSGGm6g-M6VlSAz5c1-2jTRHDRO2anbTfhHB4M~vq6SKi0DpO~l4iJNVJEeRQzd5ManCzaPGDCLTb8~WiKuPQNax~DL-Dlff~yFwOGLPrFSiYdIihCZDd4Ci74Hj~NNv4Ji89wvDaje95CQrnvrkDPzb2dcqVxfoqSvSh4Oh1ucCig9DwnJgj46Sxfyx41RFQUC8N7PhL4aeeiL6z74D0VCZNs~V~ZbxOoxEAKZ6VDx1IUkXdEDWz9ZEXm~zTTUxreTwtWNx56~lCZsnmx2A__);
-
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887889/store-card-50-holiday-iphone-pro-202411_GEO_US_svneae.png)
 }
 
 .top {
@@ -264,39 +265,35 @@ body .sub-header {
 }
 
 #watchser10 {
-    background-image: url(https://s3-alpha-sig.figma.com/img/c919/7678/11d17384ffff099320c9c7133d51ca53?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=doZPNBNIxD6236ds2nkb3SBxVYQ-Sj49tf15420izd-lfU40T6oC8Sd4WPUSGBtpIPs49vhfZzEvNy3vGNjMl6YJZhsWIJzTlcBYOj2MciNeQ~XwhoL4fuAghTdbROxLYQ2hIKvYpyx3C~Vg~vSApDpU3yZk12SoWOEUt11bQQtCcSXeFp0qfIOafHXaZ7-9IcZvWNgaKgMUpRw~-itwMluYQRbm5pWMSKJ6d-qmbd6NlFX7hyHlNNXsWUsP4dBMsPeSyNEth3q9f7u2OFLtxJtd-IL-su48l5b77cHcWPLvSMDGDIl4vmlDHRSHxZDESnltS4hYAIZT8LbcBdDOzA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887889/store-card-50-holiday-watch-s10-202411_i3qg1r.png);
 }
 
 #ipadmini {
-    background-image: url(https://s3-alpha-sig.figma.com/img/0cfc/0dd0/d01205674f4c489ef17a681ba94e875c?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DWsKu-fr33qUjNCZom4mYrsQ-nKEOdXw~n8rauYhLKBRhPRboFexQdTp0E3TQYnDSpLYrreo4x1tht02ZTfag1yfs1W7dXZ-v7v~4MbIwX49NatZSfrC~azSuxLtWMxOo8rIYi-97CSoYlmyoWI5y6zxaBz8kFBxvuuNSrCmTv9zPrFmoSo5QPgbg5pFymNv54g7d~0idnEZ-KSllewmVnSMzZ89tqOcm4r4g3UfMDuvuzQ2Tri6OLScsEUrbKL1z8zAfE4RsYR90c7zRM7RHLc5mV3pDy9EHiepmKu9XE3RbjZbqcISs4FJpgaNttCEJTS30nlzVrsImjoidHJ7sQ__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887889/store-card-50-holiday-ipad-mini-202411_apf43r.png);
 }
 
 #macbookpro {
-    background-image: url(https://s3-alpha-sig.figma.com/img/8943/d8c5/85c4f4bb4720641745b1cce65bdd8f0e?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Uki5e2-NgDtkhOkQSIHG45LmUL3RpqWRePNP1N9Er0sWbUYscVNFt~GBJtgBmBk7ewMF-Eor6FTRuw-JNnKD84rDzfnWfWMGNgv5426D~Ay0bsartFzvXloeIjZ13lANFH4VkqoDR9hYdjKJ8TE~0ld4dYL0T4oB4kPmCnQobZOWR2mmrVxpkhp-FVntOpBC9zO9MumBnUM5AJAyH~713jiZ3y7N0dw0V8UedrXu0SckbXmnSo4tx15xBqg5dRqTrO-ih7GQf4D3~VqaeastoxoGjuKJPlBRBYYKs~PkuvxmUdTjpIxFPx2vD-WKt97rKymQKTXDuX15GxBc2L5H3Q__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743888131/dv_sdcl64.jpg);
+}
+
+#iphone16e {
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743891598/16e_n0fuuh.jpg);
 }
 
 #iphone16 {
-    background-image: url(https://s3-alpha-sig.figma.com/img/d6d5/4bbf/5e60d7bcbf0811a359f54ea9b5d8fa59?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WXILrveKSmmQ2l7qTpLS3EPDwqTuhfKvSS6wwluepHaYe-bu2l4Q29ztpNHiaWuPggZubg4KqqF7BUJJUB4OQJGI-6Mq2ZXDA7LsxjZT6Xu8NtUkEUlpjSBvf422xXkuIdpoYCOCQ7hkXB63dR3RxZYGYA07qOrUx9RGiqxZlbBfAOC710fuIC6wu-NmoX5A3FDz~Vzf86ysg-3Iwv9Yg0Ur2mk81TprYHswQW2gVNfxHnauUlrj6zbq8sLuvX0jybKAGMic1y18NGHkrMowLDBORujqMidaJPjuoE1Il41n2fobnXeJzf~HTtzFXE6~7MnZmmtXNm8LQA8l6ReMkA__);
+    background-image: url(assets/main2-3.png);
 }
 
 #iwatchultra {
-    background-image: url(https://s3-alpha-sig.figma.com/img/878d/0d93/820dd278ae88a5c59cfe105308b3f6f9?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pldGRHaQtDzGRt~gIGH8T553YihsUpPh2~gwZTL~VhoDAwMHHTSUE6hKOAbjsCXaIg3RnzQLjGZFZMAf2L6O3pGlYLINMf3Lc6IoGNUhuJl0y5astnNJdu0ETew1T3WnCmTC3ueS0elB-2RUk2bZGPLjFvmeSJChRgU6oF-LVNQuSyKsdfOpinEFw47uNqaQGHpi8VeQRq4t4elZGUz0OzNOblHyc1v~DB8pdBiijJZRS8lOeVc1FCjoVtfOiphJ6mm9aiL3mjc9mFmW8iDcupcVdti-dHec7APmkEP5JhZvS0BYRnYmpQ0-E4bLaiKaty9hUKD64os8aUC0dV1yPA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743880486/Figure_2_wcet9l.png);
 }
 
 #ipadair {
-    background-image: url(https://s3-alpha-sig.figma.com/img/aaba/15d1/5cd88cee1f522c7e929d04507f57f184?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kCL9PXVzywQyN62qs9vrHHCYVUuwq~mBiMGM48Dpt1LUeypp5yGdd9oJ85WHX1DM5J40bRvilneCAxH6XWzxWJq81CvK4~a1Dbn6eB~yrsvyfOCJbyfpcnCLG1TnwUDH9KqO8VnwfX21sq558DAPNeNHiize53LEUvIr6HO5VyAw~8JvmLPuKSw823pSFnvGGGSS7bc1goPMIQGd3Bue~p~vV543PdCPeNAsSbz1XcX~SSyCa5KRq7vO0KfXZGu6deZVnSchnDJnqbkafwQHzKqhrKsVzhOrGwrV4USa5of2CtzztTJCx2Lvf9jh0BAN4SgrzdtfOvJWfi7EyDwP9w__);
-}
-
-#imac {
-    background-image: url(https://s3-alpha-sig.figma.com/img/1880/aa8b/ecf98ea93ff237b0c794246365945adf?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pIkNqR4fd7v586Pc~44wSpL1POUeuGW69uj3hSuBxE0Hoqryyrmh5ROrvLC5PvmRXQTG-MWXlZzaxxVUinkC84t7y75xKXmF4ZG~voHRod6SWNzEu~WX5pAWvkxmLw3B7xEHP3e5xosszaHnhTnqccCBtBJrK06xRfTCMBqiDEDM0WCALq8LgvFEyUXyo1gYF8onP0FooIrp6zdXb3ayqldzRZgzuoceoNClpfxlezKmZYjP4JuORh8SlR5Hc4g-CShd0jKINs6IY0VuHUuDjqQWGjelEovR6o7l~cQRMWviQLI4ZGkl-zHsVaqvecVLwbyl6GAa7VpYy4~N67JW5Q__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743891602/saf_kvnixi.jpg);
 }
 
 #macbookair {
-    background-image: url(https://s3-alpha-sig.figma.com/img/0fd7/cc8a/6ba0c070ceba0b840e709cddc8823b06?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DZ1aLjT06WnQE3VdWmTie6kXV~dYOVv6j1NLrhaMjichnA1RFLM8oLKJ3FF37G81G94eY5gjgnccu0TxsE7roywXeXyXU0Rca1KChLAm87dT~fVBP7eufeQpBlYVwirBSbl5o9QKi2E68kDgYdkq4GDziLvKY3sTm7NYCiuQX7zcWlMx4CBbc52~U9079L0KUrUl3S4sn8UH3DHYBIHDpG-45~xFSeTOeGWmZFnSFBWXMELVhMyI6JpGZq2gGohwlR9F6QJgkfwc1jKzdko9B1uAJNwb-j4LhCqhsE~DYOzf7rS2tFvTv4zZKSSnwJCH8EQFElMCgPqt~RGG1C~5bg__);
-}
-
-#macmini {
-    background-image: url(https://s3-alpha-sig.figma.com/img/2279/00f7/25887696aee7b17f2cff51498d865d49?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B5C0icRSMjNnLFGTmDzyFiGJ-TYe0PTnpgaVdQC7cOHjxqweDFU-GTJ-mJjHiEzcafveZQ5DhGZjjGRQe27kZibT23s7rT3dHdAdsxuzF9wQgI4jnqA2PvYGK~7Aa1pUDsHnTlxrzXV6gcrn5UB6s~e3uMj80rrvolZvkcuZMMzY36QKh40pi5EMKE8~6vsCK5Jgbt5k3X39JpxXnlnqnDK4MHO8phbQgdnAuSVCh-yEwD2jlOs7kEwOE2qBA8J4N2zo6qexRr-ZWqOYMavsKcwaIcd2f5SAuzbGt5g8xEGiuymtxdDAWL8XZeHEO37lQtD56z62Tf3sJJ5vhYu5Qw__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743891598/air_hmlp6d.jpg);
 }
 
 .box-flex {
@@ -315,6 +312,7 @@ body .sub-header {
     height: 500px;
     border-radius: 18px;
     margin: 10px;
+    padding: 10px;
 
 }
 
@@ -337,45 +335,44 @@ body .sub-header {
 }
 
 #box2-back {
-    background-image: url(https://s3-alpha-sig.figma.com/img/0a52/5b0d/a81b93735e1f513f958e111d7e3079a1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ocvW1YuwWwxFVBgtHH2KxB-VcbYTPZ0riFX4Pw-wtRZFUr8gfmg3XNDFYmjjWNJRwa-JSMPIkoJUJOOwOTCS8pRmq8gPZ0Neyyb0dtVCJCudkBTXwIzGiSvhEXtDVwbnTYwAGG2Wwb5lej55PaC2dYdZ5lUkTH9fM2wigsAqUdAqqcYYkXMph~CuI2obmL9Xjo~JldR0zHvIjLnclF1lMtTTBUcXA8bojJSzQl4vAJDv1BiMC2-dQI3sue8HNV~JJ8ndSg8C6doGXqawzmdUuHlAJVKEMJvJj2jPwGH9~KdLjKDsL7TTwg1t2h5gYgfJl2X98hzlZkoPPz~IjIHDOg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887888/store-card-40-holiday-engraving-202411_hgi6bx.png);
 }
 
 #ipodmax {
-    background-image: url(https://s3-alpha-sig.figma.com/img/2609/ceeb/74c88a8937d995e24c37c91f4084949c?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gSF3fCpjyyf93bbQai48ZWjl3MRjNitiLLYOZsFzGbveUW1FM5hNJY-0YTgLQWWq03I1EE5nouKo0FWckWHSSTRIonWr6o90cIroJ2Ue0ez4AAwDEkENENUU~~tWYTNgi3tbqIFxpg24gS8NmfJiekAAJ6HOkAm-Y3ZyLTNIi4KlRsep7TCLslwhKcUD6IHHZ-a8JAorvdZAxF4mrmpZscuUrW~WkwpZY5~zqJsjY21WUa3Z-nzKKqcX7FYiSZn~bIu5AO5VN1SOll1MjCUSSuXvS9gPvXjO9TB1DxE5a-76~F2Xg1qcJ2ZO8I5U1cE~cQYkHgXs1mkk2pSmwDfbVA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887886/airpods-max-select-202409-purple_wvxefa.png);
 }
 
 #ipodpro2 {
-    background-image: url(https://s3-alpha-sig.figma.com/img/8633/32f4/02f27d03cdecf714f73f92304e551a68?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JQTQXBj4lvpPQbUBHCowrXOpMY4-l0fWENu8BFgW6kX3UjLEP19J6CtyG3SoaPmxAciM~ZHBoqbzDVmmmEfvxBR7-nIX3n0MRV~y~bOzV8XjwhUe~ZFXiW2aeoV-~vJ-6OZ7RVl4tuT~pL~6vrfENF9EUNCbuB-hU9nk4eCn5tOqc8HF5GjE1AEMAbvAXRY5Vriar5MNexfhxmL3S-YBGgTNGq3pq3TW1zdgPylXRdwgPeSBj7omQ3xRp-ztf6I2cIjElG5S9cqS4Y4C70sQY6QorV9BJKz6F9JHLrfKgwrlkT8XZiAH1gG2RWp-dMYqXThEJuiOXlgUwsez1hC87g__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887886/airpods-pro-2-hero-select-202409_qxgkr6.png);
 }
 
 #ipod4-active {
-    background-image: url(https://s3-alpha-sig.figma.com/img/36d7/e679/85c8efaa8d3eb3e76015e0998ef9509b?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dcu~rtnOoMkpOWIELxTy1ne4BboBV4b0H1ajD0wXP0lZdKf41KU4oXGCo1YMBiDpdHD4~eiUav0lUFeO2uCPOvQZLFb0BFBjzo9qdZpLEsHBGPiAg26nyjHJRWuOg67~S4oScki2l1gG6oYHl6-nfyrRhRtfEFaxiegRXgsijCEBDvYfaMmNCrNT2GJ8uXkH7Bv1Zsa59V04Y63VNTnFUoddLT0wqu2un7qmfoF3jkKmKARMRS2YyvO8yiCCROKqcx~Jbyn1~-sgEQSfwZVzHJhkZEbKDj7a0zzbIXTP2oHYcjsbcvdgauSplhonYnjCi8GVTCFiLLjUpkauUs86fA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887886/airpods-4-anc-select-202409_ich0of.png);
 }
 
 #pencilpro {
-    background-image: url(https://s3-alpha-sig.figma.com/img/9c27/be91/006917b2bc4752dedf37023b08a9cafa?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k6VgIc-kEP~pxGEhIOUMkgPKYKp0xJDGwb4jFMgZoeaVTOy190JCFPhrpSlR019Wwv9ILjtROYbV9ww7G-iznWDJjxlrVNg-Edh2a-ch0ASLrpGKSVYuBrIerfWTyGWa7j8KZOhdPqgDM7wgs~VLpdLirfNxGFa8p~ySVNqKONW7SXxyKO8Jn148ezUzApqG9QYHr9aEDicRKQDTslx4U5DWO1~HCvZEqS6a-SfV~XibhRMDzIVMooaYAoGXeQ0irKmlqElV5gFdEJMhk15lBDdCLFB7ksyrL7nOtDtOohtFVRpKC5H5HEonwE93bC66eyxvXFCVJBKl5YutJDIEpA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887887/MX2D3_wm3ero.png);
 }
 
 #tag {
-    background-image: url(https://s3-alpha-sig.figma.com/img/14ff/d6cf/fbb239562141baf424500921ca2dd845?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OpV2wbkr-rrTd3dZOJGBi1LF4G9QyX-OJlAwQezOtlx3ddkEfA5CcEyBk-Tc04b0rvftXpSvEiF2mZwy7rYud32ZB1lr2FacR6xJFQoh3opaZuwpCaiur~EjuUQ7HJS4yk21YY60Q3vbWQ0DmUkCsdEEvI1qUIeudG2koSSGAmYNN9QTPu3al3lTcp9FvQYC5lq3oG1reZhx1xSzqWM-DwxLyDMEjjl3VeJWQ6tQ0tfaFCWqaUDNB4~5bilDKXKPerPekgm40l5IAawqptLzDr~pQ~1W1~sHkGhqZTqD~3cYZUES4zHTPpsUcMJaaF8xSN1SFIpXa5aLS2Zk4owHbg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743886914/store-card-13-airtags-nav-202108_wc8ixa.png);
 }
 
 #ipod4 {
-    background-image: url(https://s3-alpha-sig.figma.com/img/552b/4efe/193b8654d27d8d20cc69ede1256726c5?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OSoVSLQ7ApPbxXoL7cJvC~guZnaEnOVIddw9nbnHS3Nmq8xkxTu054p348dvUY1azXzEsuk7ZiZZaEw-1RIkdewb9Ed49MfI2FlYzTlrfvOfKZY1xObh0N-EB-QQB7DGSnHsKbCHFdwPXrT68vb1ESEihwD~ncAcovkzw5rIUwQNpv63yY0A0MtO-v6Q62VTgQXrGtPchFkkYK3J8aY44rqWoPHC6BbBOW1-ZCUn7JhXUqAwEb0I0MfUndJ81ElZpCGbcaiKjmwBhOCT1Sfq6OAVU5ku3W-oqoFduUvp~FbRXPU2fXfj13If5VNFdYX5Pt6uvlLoACHWWp7jS5mUKg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743890232/aorpod4_ubfafs.png);
 }
 
 #pencil-2nd {
-    background-image: url(https://s3-alpha-sig.figma.com/img/9c6c/748b/df0e2e3eb998d78d742f9c27c8679355?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Sdvw3qoc2LuEqyej9cY5mSZR68Y-Npn4Sp20BcqZs4v0~NzZm8yZ~Ip-jeDYrHS56CLtRMHUCEFNkPwUE51Q2C~UVTeP~PIv5KlsR-Wph10NR0U501v1QixIHFZVfxhP88v-qSV4GMJDEBCS1FTWc0rvCzq0N4kfU5lldj4ZWZX60kGbmLrViCOMCPOr9K0NCeK7SY8hN8sy3U-nIXHnHrq0LtDY7gmmrMCTv~2DBlvDl3jjyia-H1REi~K9Svvr-~7ygW7W6rWh82ryzv-pl8Ph~KsaQiuZbjXqeoWyIWAxqBFtl01ryhMuYTRyAdxwt2tmhdAjrirBYoaVeDkdKQ__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887887/MX2D3_wm3ero.png);
 }
 
 #airtag-4pack {
-    background-image: url(https://s3-alpha-sig.figma.com/img/6403/173a/fc6b65c5a68240116a061c13dd6dadff?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ilpIN5fHhz2bNyf-aAnpkDMiZjtnqNUEtwFCajfPviVSM6PtsBMlBfJJLAlmTbZWp6ZsL8ZSMhv936A9lb8P9Zwe2ak65QiQV61w5UaEHLV0urI9Lz597rC4v3PxBhsbO3~pzK6Y~trYS~LrY6Qt2SNUcca5wWhQJ-ebfvurg1Dy6vmQ5kl4kQdBeJ9ATLIqSyDCuyAlgQj64zUilrjblyGUfow~j3i5luug-7VQkWAI87lT7MkqQFI0Qu7eDAHNvleSAoGOeqWoeiJJNvby3~xcmATxuBKxC1kQQjhW7xNgNG2m~d9oWyBt13MgofH050YXF8-6YBg5aUbG3QnVbA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743890232/airtag4_ftcf2i.png);
 }
 
 #beats {
-    background-image: url(https://s3-alpha-sig.figma.com/img/5073/a0b6/05fbb857ba017142e381e9b112fee78f?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kckMAYUNfJ~4v4Z24wMMNfOYcN~WUBSzEEeBn6HfNnGVtEg44UB~zbb6zvDMa~FMhGGiWNsBouSaZSai8fToLoIHkZ9qB1o~hfh~Y2~WJqC2oSSEp64x~lEqac1ZG0BI~nXpYUeJzV2lGkkVhfxXHSZSByyPN8ojCA1aNT5ZMslgUnuSNi1~wAAqwJR16iiME2kIQQ7ymK7OmthzTaZZ7xsp2bEb5e6iJdn4-0UGIJhfr0wCO6BumlBbBNpYIkP8x3ka0KFxaLpzBhWwXsKWpvQMcPP1TXd9Ie3FYB3o-ryrw98h3i5Ycfc~79R243lcuInfqZnjJeKf1hvbRq69AA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743890232/bitpro_trkpq3.png);
 }
-
 
 .box-2-top {
     font-weight: 700;
@@ -441,43 +438,43 @@ body .sub-header {
 }
 
 #box3-back {
-    background-image: url(https://s3-alpha-sig.figma.com/img/6da6/9c7f/2d4d299063c16c1d325db130f08ef7ba?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QafwNXULIPAz3JxCZnEMAgx9bF6-8msRuS5bE2LRg19eClBjnhYmYZll2Zj9ZatFQu1Hj4yTlPa16QDC8lYVjxE7ABzMvQWDPhG5DOdqXNiL0iDyCcN1gHRooPsxAAwIKCDRDAtJefwLL2RXGZEpgUOgzpJSkx7UtaMbr7UnHnRyv13z2gHthktSuNUWSfQPza9FjxmOgwDvpNXiQuVdm2EAI4PkFSB0i7QF4wSNbB3qnb1dRZE2JOodSEJNVsLHm6g4X5VwIEQTHVBGoFY6xTU828-ZH4dt5FUEtXLoq0zsyCsftu6T9~fq6oKgwQwdbhPJkkmE8t1Sky7PAqXxPg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887888/store-card-40-holiday-quick-picks-202411_my3ivv.png);
 }
 
 #iphonecase {
-    background-image: url(https://s3-alpha-sig.figma.com/img/c016/407b/1d2afca1eb640b5c24fa60b9d88f09e8?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LbACVyrdCBN7vnyssb6v60YiYoarHK5V5q5Gve9WpWCSbeJ0LKkt67rMZDslnm~DtdmHYJCmOAwLdOFjULXjW06Xc0OYs95eq9YWZUjfPMwdLEWtjRzPVck1NUDQGLwghdpsNe~T26LcfJmE6kheRfk5HodQ1J85l46~O6R1TxbOUeq8L4ywVQ~n82Q9pfFd~Q~FrYFFxZy9h-t1beOA18bTy-QuNIVqzwkFmM9ArqlUOJLK3BYg-vgG2rQEC1IDG7hI8D3F3IOoLyKsTCpcVPYJQdMlRriRub1FbkxyYz3Kv~FlEtz8H9y5qcHURSAribhBXmYtfpTUcKhsiWFY9w__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887887/MYY73_gmaph7.png);
 }
 
 #homepodwhite {
-    background-image: url(https://s3-alpha-sig.figma.com/img/5552/4950/c6b2950e36e95b097ede33316f9d3373?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oid7Nb07fmc9oLIW46l4VaNOqWubLzl2-AzejTcvYetFNWhv0wRiTR~EsEVRij0QthddNJK3S0KjEtnhXbQl-UWaqFblYoay-dc1WQPLDOzoDSsVQV~OAmMK9upCw8-muk-Kx7JyzTBvRkKs7i39gW~PAbLQGGfMr4vlJPVvTre~qHaIJohnZac8WsITl4xG3pWHxAnHI66hRkST-KG3fxyqy6LlDZr57vToWOgsH1spRpbaSReFqlh40lRvniLYoQ3m3br1sVQcoo0GByIpDazbuTWhg2zpZQps7s~~tUlPkr3g016nDYJGwVZmd6N8Cq8Fhf7DEhAmhN4mMjKirA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887886/homepod-mini-select-white-202110_z2b7u6.png);
 }
 
 #smartfolio {
-    background-image: url(https://s3-alpha-sig.figma.com/img/72d5/185e/ad4c03bca33e9d4984ab45cf6c148938?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=crdZh~Ca2VfqdG2I05uHV4tsAH2L6PEak4gXC9~o0uhG6ydod4OHgJNSTYnXGEMzuRTgK60ms6P0deDpzEw0yJYbQf~jAAg9Ar5M4vytRHa5wL-8OYggvUXaJLVINPxwLQoz2g~qgJsrneIw6mAF8do6T~jpKSBNWsjAWph~nvSAI8szTTntzW~eK1cNS3dNVkaUWjrpTFUp1RS8NF2o6k0ydVZ9tcP1O2VGk6MAIdjAt5Ns9E5hAjQ1407fbYXfh1QUZi7ftrka0ZnWeOXiym9jBo3spcT86OF6vOF5RZPshoABrjC2GrHOH57IvByCUizJPsR34Aa5vRyBfVCnNQ__)
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887887/MWK73_xow6tx.png)
 }
 
 #beatssolo4 {
-    background-image: url(https://s3-alpha-sig.figma.com/img/0c6d/273e/8e0627f20f389a36726a299eb458c853?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Go090bakm6lxkhRzO5wn3JGAYbBE3glMAK-h8P5kGgOQAl5FlSgmtwaHVoI1UgB8oQjPi2bEPmKQMYuk9i4IUxEqXtJVrl2pHZQSTdpnFazbuDDel-ilSt00trhIw1JQcExpi~az8a8AYWQEQUPfht~0suH23AMg0W8Rzi4LCmiRIxtdHqxI3nzN8MCPIvenPVBzDn3uUP3eKmt1cb1PHObULZ3bqGVgrDYNgzGZ-J8sM~J~vefuuYk~-BHVIGssHqFZdFWk3F~rutoNv3kDWUq7J2WsixtJxkQ8H3MuQ0X5Knf8yha1trTyNSVnpKfa5krTnz4uYaY-znCaIkjLlQ__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887887/MUW43_ptbfrr.png);
 }
 
 #sportloop {
-    background-image: url(https://s3-alpha-sig.figma.com/img/a9d0/1f7a/7495b2647925375cf75b9f665704fd0e?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h4g-Ibz3~vGkv0glCqbh7ORwFYFl-amH9DXJvyXqYqNNG9HjUqXyM2tszqwyzencxFM16lWlcErRuDZyLC4OcjvANizHtJtOcgcnY5CpzeVx0B78coRIoK6yyhxNPtUcXCHOIAhgFpbOJTHZmn-QUQTs1H7dy9NR87XvDCsR9IpQi3asCsYnjiLPK98ioAVT~REmCRwfVaUMVKGE0uEUyh4tTA3yWaitpzfyvSjr~rjwv0ufsMY4hP2MpznU81XT3j4vJrjyoiyM4zh-82vcmQVVWsmO5fd6DHczaU-dV6dFj-5Un7A6J0hcuz0HBqsWrVffAdZ7QbWaxC2I2AeM8g__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743890232/sportband_tpqkua.png);
 }
 
 #magcase {
-    background-image: url(https://s3-alpha-sig.figma.com/img/43c4/4493/386df0ced176606874d5adf7c3db7a9d?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k5l~2jnoIIyQj~gRY~W33P0YyKZaGb6M-dvdZCDfAvqToCSLmdwoOC9oQCSfkF1DfPRQSJhaqX-QQ3u4BXac82t4e5~o7m1wjU2p7zBx9BISut2ABXDmCMdhUEipTWPnqhi7eA4-DOsbu9cd32ZUvzn-B60Cl7Pfbn2ih~TWQ1Lp0PRQDXQeAv8KH-4OneKBA8OkIB~-hF6TdzAlWkSATJKwmg1SbsaM9MqcXNaZ6UH~HVKYY1UzEbA01g-M2cChPsR6QLct732JBfsyfllfwrws9GayokThA-xKCtAuarn3H63Y73x-RkxycpJOdvSMurrnZ9nfpFtcb-uXjokn~g__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743890615/magcaseb_gociku.png);
 }
 
-#beatscase {
-    background-image: url(https://s3-alpha-sig.figma.com/img/dbad/3948/d27cf044d772d696ff314fe4e73463c0?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Rs1LaiU8iuYfh1sBPNIbajvV56Lh3ionzRUqtGgdC0qr7W~cKg39hjIixmqqDolFLHqvhFNXDBysY7uVUXBJqBKaJGWFHLcMgaPL7cjaw7GgXHht2-sqRA5lgElbiqfJzAG56FCD6FsNoAh0IGDw8BY1i02ABmYAEds2O3LsinVOs125nT1hgcJnrDCWaZ4Zs2-ReKLPq8pdWgJSGOMed5IdG4PvuIb22huaE4Zbee4VISjacdP8QydgHHnTGoQ2ueRo95i1F3QxpXNmPoDvGN2BgEOV~IBsJSr8xEnm6rzrqVu5KOw3klOpGCAyWwQkwwhrIPSHLDzHfBc8acomLg__ );
+#siloconcase {
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743890614/magcase_zu4hqa.png);
 }
 
 #storecard {
-    background-image: url(https://s3-alpha-sig.figma.com/img/258a/775b/2e9e1e965532e626babd9e0f1d057aaf?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Y3K7BNSAUogryTCeRXYWH21mE9puOuorq2q2M9RUMBdFBc3vIx8F2z8M4k2p0A9fbGCoVSIzN97PqIksDUpbFkONiobyztZYxoZoWAmUPJiM3fdkByzRgT1Zoqi20lYXL5lj74yX7FBCG3LL6aFN3uFvRdZQAph77QgUjrdgQxrf7lfXc8oNXNmqcZ0e1Hptfw8CNjiJY~glqrfm~2yzLO5MH36phtFpSKNFZBgpYXtKuUsicXmBDIVD9-vxIraS4oJ~gm-valsaEk8WzejMsPBcXSytTf4xelPxMRcaT7k3tcc0rXhEi8D8kXSEWSsBfRWNB33GXlZax8lkJjikOQ__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887148/store-card-13-holiday-giftcards-asit-agc-nav-202111_oo4kfy.png);
 }
 
 #storebag {
-    background-image: url(https://s3-alpha-sig.figma.com/img/93f1/51ac/653907f22599b9fbc9ab8bcfb347d691?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A7blQuA6bO7U6HIkSRVR9xwYHLoH0mBvY27hqRI81SdqYWTTuf-J3U9qgj8M8b8h0cly4eLnbmLPvdkhFcdnGPdRP2alh9EGR4jPakaAnNhg3SUiCRFI7TLCy2sYzO0uIDKDS5XCcV8Op2JTlaXWeZwAU-yiy7y0oSxSBQWB-jeTW9qj92lfactJmjLfhrZRrRYFXyyiGI9S-AKyoNNtrvj8-f6CoqfO0h0FGKNTmlWWJ9vo8tTj3ASxqI~-DfamGKuqv3lhmw9jiLfeA0VUC3tydEkABHm8umnr2IKdvv5Pwq233OjDxbZBtCizsfuW409cjBW4WuURRlOsGyBBIA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887889/store-card-50-holiday-delivery-pickup-202411_cx2qbz.png);
 }
 
 .box-4-grid {
@@ -505,7 +502,7 @@ body .sub-header {
 }
 
 #store-card {
-    background-image: url(https://s3-alpha-sig.figma.com/img/5471/1505/d840cac99050329da0237a9a79b9d07d?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gKatT8t45JOSBrhiKX6NFj2hOPXnIwOvkCWGPuAJZbTHeVjU6tuQMfbMH1HxEfEXLMBh-jV~ERkxaBp9s-LDxm5JPquHiiv9GPUw0CWecNsWViO8weQ81I63a4FIkfRuxtI7uFmPhtKLlEGpfsprKeu-vw9X2~cyYYUg1A65ve4O2Ggu3zRQcsW3FlSJENWGC6QDjXpG1ahowxi01rWuu7LvI4EAwf3yKP5gfJEmIaPwUzS5JezyiAS6SypeiXbMfQM0RcVJSIOTaz16I0cCY-mGSblrGbW6faqUv4nh0oq1txD2~XRbDh3vg1S42tXjkjnuaqXR23TNy~crKRpBxA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743873488/tradein-2_hnfptw.png);
 }
 
 .top-4 {
@@ -513,52 +510,52 @@ body .sub-header {
     font-size: 25px;
     line-height: 32px;
     color: #1D1D1F;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 20px;
 }
 
 #storewoman {
-    background-image: url(https://s3-alpha-sig.figma.com/img/7be9/e8c4/cd1a574c53bacf2396a17f1007bfc091?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E8FJqAxeOOLC4eN3kJBJc3g9lY~VST0CdVTk1PXg2eC4WjwblNXhHdNVU3hdXbwDe-CbbQ~HaaycRQ4vP7er5af9HYO8a-MoRtluTkZr5Pt1ywI~VTqk8IEVBE~UGqvCkmF-W1qJ9aCf1rguwHQM6naZXCCfy8gVlJ2edJwtJhg0vFOPD5ITQ~i45TwhyXn-N7d3Z15GGERuEo0Rama8YRS2fDYGtq8eW449K~DDmPjjrbAW56hyI7W6gAiLT8npJgzDG3sgPO2ALA4qxDdnaL~qEkT~5hvBrh1Bu9E0dJCpa6o8lNHBozjGIzNV7T1mDTVvvlDQe34rAo768pu2dg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743892072/mns_w67kkb.jpg);
 }
 
 #shopphone {
-    background-image: url(https://s3-alpha-sig.figma.com/img/61cd/435f/40e09ab084f54b61c117fab4486dbdc7?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nkGLCK32Zzqzg~tSBc1ivyvMpE8UvglwAO2g-IvwJsjTGlDl1YI0fQHy9GkSic35gaD1JcQ7YKfBGlxKcbcT1F~bSqn9GMD8vbXg8bZdBHmPp0~4FEd7cGd6VOYmDFnmPBRvCUKKVkGnCtNUMYixxCZAriaYJUDV~v1cKLjD5~oEf2rOoISxaI82a~SioxRsdh~WROtV8qkr8ohQ0a5YE~YXiHbu~xgpcNurFKb2b4Urpfcr37TAJa4eosjaT5y5C18tXJHr9wif3YMVUaoVAMKUlZofTFv4AKVCG1y24UPWbfQ-8s37MvNFbS3bkrVKbGRMA7cO5nQOweLUZUsN8A__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743892311/dsvvs_ir9fvf.jpg);
 }
 
 #people {
-    background-image: url(https://s3-alpha-sig.figma.com/img/e00b/c8df/53d39649e2e89c21f15660c5f3eb12b7?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hW3MvSLHclKnwLT25BLWJNsI15NPHCD6l80IgmwyRUNX4z5gPzV1m0WDGVUFkyUI6Cx4yoKG2d1w0nQBqsUy7D1SDxcSEakoJJZxcapVkAXJNwBVud1Q9wUCS5TRLexWRe84XnXqMxGX-VfJOh7Fuwt2n0TNiwyaw4MX49IHV7YLs3rM9JKMaqaZI1HAtp~VD5DdLdlxapGQ77iLXJYbCko-CyeuYTdxbOOOR7BNdIJMoPFKJVce0kTxjd-OzbjHgx2H2VAGSfYIFdKdbvV0OWFH6bbWxMSAGg1InIeec7ui-HIDxqmYwVaVGrGGUoAK8oh52DjxGPrYgg0AjqDLgA__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743892074/sads_ko3tgg.jpg);
 }
 
 #genius {
-    background-image: url(https://s3-alpha-sig.figma.com/img/4b70/b91d/eac4a72d3cde3cb1470a13c31195d276?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JTdVLoKsDlzMeyOBddZrnLKf2M88U-8ZS5npYgRTzGOBFAY3~-KJ442boOp56QJSzkViev4kT7PuadX5FOFY1kl9DeGpmsOKQyrUfe4H4DZs00XGE9fsnRa2DFjoVoP2WuWKh3h1O~syc4CvbwyeioNT9V7PdJOhk5UJas~DUhxYgIFO3tW40h5fR7H9qMv~-Rq3NUn41AFBh0mSk7nVpaqXgKhQ17Ir~D5s21szZwEEa8otEDIU6-m2nIMSBxlQ4ogar-GsGAH6jDU~f4cSn1NNEJ9Mv7LC1ypTBilzCdaFID7dB6FZ5Y61lsiDubeslb0iGO-juTOogC5c9BT~ww__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743892190/gen_q7qc6u.jpg);
 }
 
 #applemusic {
-    background-image: url(https://s3-alpha-sig.figma.com/img/fe1e/7ece/87047c95faa8a68f17e8867914317976?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ilaWVFFoK6x-naEslBvPT~8J-rp-vw8M58m-MyiYnePiBgRwJVW4358C7EZZA1KM07PNjpCzjWtV-kK2T3ZJTWnugONnnLgR3DO8DvYU~30ckRo2tDrVPDP9endmpJrgS2VsGh3isqRX7DKjJ4Eau-u~-x-4VRtiZ3fQSaB2IaBan~N5VlVIZMzKG-UjDXRi5DWkwO2xJDPBA4iY3i2-MtZOVe5vBgCniZ~P0v6UjMMZC5d0WIl2a~FlAGPZ3ZDTOqd-bDVyKCy8E02lVgIivn~b8BOT80aFRuEBwJZpyD6Jl9Hm-gfmaZUz7SkFSOx6QUxwlr9bWoGAyaF9kv452g__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887888/store-card-50-holiday-apple-music-202411_lfylnb.png);
 }
 
 #christmas {
-    background-image: url(https://s3-alpha-sig.figma.com/img/2171/b58f/3ab6a95e407be2639740dad7138786d3?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T-NqGKC3yVv741RRHz5uZUJ~EsFlrIPD36nf5pgkIqrU2xCkU7lBNBVgU4q8vNUtG8I5-Tp6n-xdCxbbgxdAWzCorhc8UXvlFE7mr6HKZl2VKS~OLm2tLcyP6bNWiVL0hQtfeFGFwCAPZc3SzIcb7F9uDySz6jjClvPkf9Ne2XYcYVF7Z5CIQVwVVG5U-J9pB2bzd2N-7HLc2~2FGgOMYWmyT06MXJgNH5VNa~V1pkXDqzM9B-NcijMEHhCiWe7a730bcRszmQXQkXxm2pWPeK-GZEy1E~11rr31dIleVC4r3ZtkWyrKycNs8xeWmyoB1-KXYMyKbgoCkzpIitNszg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887888/store-card-50-holiday-apple-tv-202411_z2vzwx.png);
 }
 
 #appleservice {
-    background-image: url(https://s3-alpha-sig.figma.com/img/7e38/eec3/034a854374ceb67eb6c71f4e173cee8e?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Eme5K5mUESfgKAzOkKhMOD~8rTw1FIvuMt1D7f9MbMyDvtjliBn4IgkRX-AQEUVS0w8F1EICkL0cBn7b8G3wUWl-euZlJVZWhQui6B6qW5PAvw56ocq3wdWiQVyvtEtUC9kaQy8-GHB5Oy6NEW~ccFF2CyakLyraBPyUyRsI--Nn5pdYQn9S9Hh737os3PjGbKfW4gOujBEhw6gMqS4LNhwV6Xd4aCMt8YmjrX8l3lgMGfpbeqXoyY~VorP-KTJ8uqponionzs6j8pM7GRub-qNrtxmhQBNwmpwdGJBX3DEHL~EUInsK494buCscickLtArLw-4dJ3hq6Ay2l12tYw__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887889/store-card-50-subscriptions-202108_GEO_US_u2tdje.png);
 }
 
 #newfeatures {
-    background-image: url(https://s3-alpha-sig.figma.com/img/4c93/c049/459dcec6247af385b50ac485e92e5a45?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EzSWLua~VdAkB68sXOeRyA99~jwglUwmHr1OlmrXkzSNp7cWOZB-WK8DrLNegNnHg~CF7Vs-Ijwuw27eR9GZydHjObx1KlNXSk5b8gZRwv-eB1toZT9dc06CnCqhhrARfCa1UMwtDQDqjaWIbmGH14KQ2S8TThMA9Zxfj8xPyigASJHnANOdv2X-S4geKfG6Z1hsrVi~eMXMGNhIAfujzheVNRROhrrxSEmLotgMAeKiBRAXooHoA3YVFhVCeLwdYxzGF5PcgX1kVp369vtX3g~K217fT6B~XahWkEaThExlRcC8NYAs-ONFCKOgt34M9Fl2unuRW5SS87YChF9Yhw__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743890924/ex_ufehxi.png);
 }
 
 #applecare {
-    background-image: url(https://s3-alpha-sig.figma.com/img/bf98/5516/271b061acadc6c77e380a9dd94323af8?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aUBqc9Ba1ef5o3Cn5w2Dj4zHwZSZGA1ESg96MAsMv2GwmPpm~MkONd4j1Kt-POaihJ9MBq-C4zVKOoZIvZ8TWkqEBdF3vtx-NkqaOZOXGWkoS27Yjh8TChBRy6x8KifmYcnqC7HXLV6z6q5E5pfAYOAwaRmEiscV~FRN-2LzwKxqDeBMj39BnhbTZpmVtKBJKKe5bJlbTkqDKzrrO3J5FCp9r5IFBU36qqGjlYvqZW1UkhRne81w0cd5OHbKk8XSe6~jNXYOEYkFHdb9AsxPYxIDKHznywjCnLBS2oT07ZoZP7Vr4UJMclIAKAe6qEy-9uQQ-BH494FdXSGhQXS61g__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743891599/care_teogvb.jpg);
 }
 
 #applepay {
-    background-image: url(https://s3-alpha-sig.figma.com/img/c09a/544c/10183dc0b51487b719b66124c49c1a64?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TSCE72bcHYJ28dlJx~Nu~wNcDr8JVUubjxIEBsyc~Eo21SIIrfqrsO7WiQOdAoK8q7Ti8s~Wcq9hlHIXzQojZKhaqhKlkzuwZZ9d1gXaG5VkDjUK9ecRkJD5Nzzycfi1t1X9V1EQyyS4W9s3b3HaWpdWN9rDGaVrfH4w419c~ayiqwXZdScEhjVfE3c3vrdGUEq2Ypq-Uh2sLsfLpf1iIaTU8v6r8GPoOtA0Lqt8ulNhCz2ZNBKrYnWOEcEkkrl2UMBEQdjSXIdH07bu6QO2U6jcTBmNmp9fVK9wYjuvff1lq6akqN~U0Fn7B2HwfcO36Ez7wOERMVy4ed0kqZtKBw__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743891601/paysd_lnwbzm.jpg);
 }
 
 #home {
-    background-image: url(https://s3-alpha-sig.figma.com/img/3fc7/ac37/fdb4b11fe5cf35023a0209d524616f32?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dG7-35loTq7Po5AURqOLDGsT578pRkFe25Ku8iTtEFBsWzNEE~5CU2ERBrcS2lb3FY0Qy7nrSP20qMaj-RC3US61-b3j6vVq6JoS21C6REtmmYPya3rw0llBy~JevwXoADVmsWI2xZGYSby9Ikr3sdulVl42MncGnGRxsaQCMNu4NUvfE1u4dY~zLm~CprKFndUxPYOhahje-~iC0uBMzddlV-~a7XX9Gv33GTDoboANc2IOJQj56xzvZEq9YdQkmk9T66F0GVcwA2v06jVLJkNoPHUwqxFXWph5w6ENxIfoz9-txM4DDwUi64j2HQxayK1cLiTqJz5X2SIXlrS9sg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743891600/homefs_jatbyb.jpg);
 }
 
 .top-colors-white {
@@ -576,31 +573,425 @@ body .sub-header {
 }
 
 #one-stop {
-    background-image: url(https://s3-alpha-sig.figma.com/img/57e6/bdca/2b0f233f809fe57ada1ba8354e54e4b4?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PHMHRCohAO3QiO~J7rjhdBhajCidtP10t6lZTytSHMwKgLp6de~~0ZVOtXx8hytIcF3VK9fe1x0s-BG5QkWE70am0R~pqAw471edb6igpNsP5kIMmiJz0mNhZMBWZuW9fLfp2GoYJu5154bIs~Dqvb1nH0GozsNXSkEAAfGY7mB-U6QQPBnBDokGfRB6LY3XTzHwzma-u2YJqZ3NgDXHxqwq9qQqY~OJj5mzodbRD3PuTS0cXliYndEgDhf1AUPAJm-IsQOIQKNOOABSCCfpfqmnzQ-VNOXKK0OZ1p3~ro-kCJHgjOcnEmV5LpEjks5ybwy3r-lnYUxONjCGA3VqHg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887887/iphone-card-40-carriertrade-202409_lvgvlr.png);
 }
 
 #buy {
-    background-image: url(https://s3-alpha-sig.figma.com/img/c29a/91c0/05069048c5e1b877cf3142fa2fab6067?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j7KoXdD7uTBOduE4S4lpzFkNn3mFYE7F8NNX3~w9iN2CKgzePGIdCAy7WnUUsvpkgdM2l1741YRZ-0URoS3EI1FHVK-buQOwgQq5gls43BoB0qnp~lVtRvTG~mz74elT2eVPuD8PJL8hNUMwpL~drTPgw8bHR1fg-hK7~46JTN54aPLiWim1A-6PNkp-j4Hhr8HdnaVpIFCZtAsAvyX51tG1XWSz8z9Mg6xzn0bb09NESZL1k6OkuCed28QmnsqECzQecxpU~4i2Gq~dN3EgVuVdIY-Dz2PpawY6nwOJj3JJFoXGEGX9ywdUcUn4wLT5gj4OcUucd5R9fXJQ2T170A__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887887/store-card-40-bts-edu-macbook-air-ipad-air-202406_bht56q.png);
 }
 
 #shoponeyear {
-    background-image: url(https://s3-alpha-sig.figma.com/img/60a4/9ef1/a49579aa398f78daa8ab814a87b543dc?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q8aRt2Cf0etOZLgNNBdnNfBj8j1SE6truAtEYuyk33S6rLVL9v7eY5J5e24BNvCE6LzjSOv4-c1U53ohq8qGfBFULTGJVkZaobEd11GJgS42ugo4oH7N2vg6q8YBUpkiFTsQUOtyN8pUwVc5GOtfMlcPj1AtahEEHXObxvD2SrNMKpJSH1rchuhrLogDfE0Uq32fbxcK31veXfdEM2xHyDwnhc3WY7DeGFghIgP0MnKgbiMbD0AWuHzglcQdKpECHG7c-iG0zmZxd9bOLbVrX4eYNdET-8TN4H5SvvjX8alwlylXMuVoTvgMQt4YTQl6vjtBJBrS1L1ext8aeSvc9A__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887888/store-card-40-refurb-202408_szpdkz.png);
 }
 
 #fromwork {
-    background-image: url(https://s3-alpha-sig.figma.com/img/a960/f7ee/fe8796ce51144b229909100094a59989?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gZj4adiqz6cSdvVn-Ax9ls1zLiuc4-tnyPjiDzkpApByl3BlMlRsjZ4r7v9ooYuVsyt67oX3tiSJQRrQL~lpcWT1a51tSjWx4GNRNLcf9WpRBMdFZxnhotTWDjFwpIKiKtsIFaFwjZ4AjFq3d4qaGdH1oBKxz4Hc23OUwdKZ~y2gkJhrt-bLdz6EwliI6RAhE4sNGq7hByCOiNW5WJuIUhyFWqJk4pfrq1yK4WUXYtVjOqzxzXk7CPbwS-yrvipAO0cb-TdgJgBecBsF6ro3dgFDjuCMJMyow0v4WFjmUdBOkqbY4GaYVe9Pwqb-QfPQXxxX3G2nN6HtsAiDyI2iXg__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743887886/iphone-card-40-business-202409_zoim6x.png);
 }
 
 #specialpricing {
-    background-image: url(https://s3-alpha-sig.figma.com/img/9511/d82e/0fa4f14f3d23b485ab3928f9d27a5012?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eTjhC8wqdxud19YUownShXXGS0CK10ozgwEuZjHa8a9vapZMr4dBKLWpNBrjDThyggM8wbjnIix9~598AAwN7n33akc~Vy3PoplDAn8zKsJcVO3IUUGvLGBt41Aqck-4xXv-NF8c7OINKOs8JE5icKuTxQLzflv2mZIxb6mVsxVp78Od5xK-4BOmmXT7IhgUcj1Fpc5urZkiyxvU0giHxS0z43CF9bFOEJIfFSPtSIIuFnrrrOdEKraLQBNZ3E32lKW-jrdbZlsrYgFA8Ih3igHVqU2a8ABLVpmkfC1YxsHBVuAllps6hJpWxj7PmNaW4w5ongaLOER2n7sOgFQYgQ__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743892072/oejf_kwbi7p.jpg);
 }
 
 #active {
-    background-image: url(https://s3-alpha-sig.figma.com/img/6cf5/28eb/0affd731066ece67d2221a79043ba999?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T87fcMkGm6rVv-MiAXDkWPOx8uZeLeaXumhcr8HVRsVTweiNfhJxL~1-SrGC0dzbrnh8wzcOEL8DoXCf5C311Z49V~NjRyLvmVGJfUoQCngmvv3f-UxVl6nY7DopJCOeaZqRqOpnmpjenNV-qTFtxMRRiACWTT0DQTig8jLN6mbE9DPvfLv2raHQGqUUROlLWlnJ3xFdbuHTfyjcV5RaOheGOzHnIhKZoRZthEhf-RKcG9uLSQ9SAjIKYCvECoNh8jX8NdLVSSaVbN0h4Lir8eFzercpLMTd1XKEf13JZEkb5PrPisZg1HH9zNGx4IOXWufSMoo2cqIqMtoC4Oecvw__);
+    background-image: url(https://res.cloudinary.com/drhm9rfyi/image/upload/v1743892073/oejsff_lary1s.jpg);
 }
 
-@media only screen and (max-width:768px) {
-    ul {
+.header-mid {
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    background-color: #F5F5F7CC;
+    backdrop-filter: blur(20px);
+    display: flex;
+    z-index: 100;
+    top: 0;
+    display: none;
+}
+
+.mid-flex-ss {
+    display: flex;
+    gap: 24px;
+}
+
+.mid-flex-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+@media only screen and (max-width: 868px) {
+
+    .header-big {
         display: none;
+    }
+
+    .header-mid {
+        display: block;
+      
+    }
+
+    .sub-header {
+        display: none;
+    }
+
+    .header-gradent{
+        margin-top: 48px;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .color-first-hed{
+        font-size: 35px;
+        line-height: 42px;
+    }
+    
+    .first-hed{
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        overflow-x: scroll;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .menu-img {
+        height: 68px;
+        width: 100px;
+    }
+
+    .menu-text {
+        padding-top: 14px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .text-div {
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        padding-bottom: 18px;
+        padding-left: 70px;
+    }
+    
+    .box-1 {
+        min-width: 380px;
+        height: 400px;
+    }
+
+    .top {
+        font-weight: 700;
+        font-size: 12px;
+        color: #B64400;
+        line-height: 16px;
+        padding-top: 31px;
+        padding-left: 20px;
+    }
+
+    .toping {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #1D1D1F;
+        padding-left: 20px;
+    }
+    
+    .toping1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #1D1D1F;
+        padding-left: 20px;
+        padding-top: 54px;
+    }
+    
+    .toping-message {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        color: #1D1D1F;
+        padding-left: 20px;
+        padding-top: 9px;
+    }
+
+    .box-flex {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .box-2-first {
+        min-width: 300px;
+        height: 400px;
+    }
+    
+    .box-2{
+        min-width: 300px;
+        height: 400px;
+    }
+
+
+.box-2-top {
+    font-weight: 700;
+    font-size: 12px;
+    color: #B64400;
+    line-height: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.box2color {
+    color: #6E6E73;
+}
+
+.box-2-toping {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1D1D1F;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.box-2-toping-price {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1D1D1F;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.box-2-padding {
+    padding-top: 35px;
+}
+
+.box-inside {
+    max-width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 41px;
+}
+
+.box-4-grid {
+    min-width: 220px;
+    height: 190px;
+}
+
+.toping4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1D1D1F;
+    margin-left: 20px;
+    margin-top: 52px;
+}
+
+.top-4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.hed-div {
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-left: 60px;
+    position: relative;
+}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 508px) {
+    .color-first-hed{
+        font-size:27px;
+        line-height: 35px;
+    }
+
+    .first-hed{
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        overflow-x: scroll;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .menu-img {
+        height: 48px;
+        width: 90px;
+    }
+
+    .menu-text {
+        padding-top: 10px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .text-div {
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 13px;
+        padding-left: 20px;
+    }
+    
+    .box-1 {
+        min-width: 330px;
+        height: 300px;
+    }
+
+    .top {
+        font-weight: 700;
+        font-size: 10px;
+        color: #B64400;
+        line-height: 16px;
+        padding-top: 31px;
+        padding-left: 15px;
+    }
+
+    .toping {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
+        color: #1D1D1F;
+        padding-left: 15px;
+    }
+    
+    .toping1 {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 24px;
+        color: #1D1D1F;
+        padding-left: 15px;
+        padding-top: 34px;
+    }
+    
+    .toping-message {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        color: #1D1D1F;
+        padding-left: 15px;
+        padding-top: 9px;
+    }
+
+    .box-flex {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .box-2-first {
+        min-width: 300px;
+        height: 400px;
+    }
+    
+    .box-2 {
+        min-width: 300px;
+        height: 400px;
+    }
+
+
+    .box-2-top {
+        font-weight: 700;
+        font-size: 12px;
+        color: #B64400;
+        line-height: 16px;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    
+    .box2color {
+        color: #6E6E73;
+    }
+    
+    .box-2-toping {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1D1D1F;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    
+    .box-2-toping-price {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        color: #1D1D1F;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    
+    .box-2-padding {
+        padding-top: 20px;
+    }
+    
+    .box-inside {
+        max-width: 180px;
+        height: 180px;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    .box-4-grid {
+        min-width: 180px;
+        height: 140px;
+    }
+
+    .toping4 {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        color: #1D1D1F;
+        margin-left: 15px;
+        margin-top: 32px;
+    }
+
+    .top-4 {
+        font-size: 18px;
+        line-height: 20px;
+        color: #1D1D1F;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .hed-div {
+        height: 130px;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .top-colors-white {
+        color: white;
     }
 }
